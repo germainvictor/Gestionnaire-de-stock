@@ -1,3 +1,5 @@
+Application web permettant de gérer du stock de produit
+
 **Fonctionnalitées**
 - Ajouter des utilisateurs
 - Connexion sécurisée + Ouverture de Session
