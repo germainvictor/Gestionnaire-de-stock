@@ -1,0 +1,53 @@
+{
+  "server": {
+    "directory": "dist/"
+  },
+  "tasks": {
+    "html": {
+      "src": [
+        "src/**/*.php",
+        "src/**/*.html"
+      ],
+      "dest": "dist/"
+    },
+    "script": {
+      "src": [
+        "src/js/*.js",
+        "src/js/**/*.js"
+      ],
+      "dest": "dist/assets/js/"
+    },
+    "style": {
+      "prefixer": {
+        "browsers": [
+          "last 5 Chrome versions",
+          "last 5 Firefox versions",
+          "last 5 Opera versions",
+          "IE >= 8"
+        ]
+      },
+      "src": [
+        "src/scss/**/*.scss"
+      ],
+      "dest": "dist/assets/css/"
+    },
+    "image": {
+      "src": [
+        "src/img/**/*"
+      ],
+      "dest": "dist/assets/img/"
+    },
+    "resources": {
+      "src": [
+        "src/resources/**/*"
+      ],
+      "dest": "dist/assets/resources/"
+    },
+    "fonts": {
+      "src": [
+        "src/fonts/**/*"
+      ],
+      "dest": "dist/assets/fonts/"
+    }
+  }
+}

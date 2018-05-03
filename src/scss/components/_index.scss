@@ -1,0 +1,121 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: $color;
+}
+
+form 
+{
+	padding: 0;
+}
+
+.background
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("../../assets/img/background.jpg");
+	background-size: cover;
+
+}
+
+.container 
+{
+	width: 550px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-5%);
+	margin: auto;
+}
+
+.title 
+{
+	font-weight: $medium;
+	font-size: 66px;
+	color: $white;
+	text-shadow: 1px 1px 8px $shadow;
+}
+
+.box-login 
+{
+	width: 400px;
+	height: 290px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: $white;
+	box-shadow: 0px 0px 10px 1px $shadow;
+}
+
+.content-input
+{
+	margin-top: 15px;
+ 	display: flex;
+ 	flex-direction: column;	
+}
+
+.box-login legend,
+{
+	margin-top: 30px;
+	font-weight: $medium;
+	font-size: 36px;
+}
+
+.content-input input
+{
+	width: 350px;
+	height: 30px;
+	font-weight: $italic;
+	font-size: 12px;
+	border-radius: 3px;
+	padding: 5px;
+	border: 1px solid #979797;
+}
+
+
+.box-login .name-title, .mdp-title 
+{	
+	font-weight: $regular;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+
+.buttons 
+{
+	width: 350px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.connexion
+{
+	width: 130px;
+	height: 40px;
+	margin-top: 30px;
+	border-radius: 3px;
+	border: 0px;
+	font-weight: $regular;
+	font-size: 16px;
+	color: $white;
+	background-color: $blue;
+	box-shadow: 0px 0px 5px $shadow;
+	cursor: pointer;
+}
+
+.connexion:hover 
+{
+	background-color: $blue_hover;
+	color: $white;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+
+}

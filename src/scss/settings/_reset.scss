@@ -1,0 +1,18 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input:focus
+{
+	outline: none;
+}
+
+textarea:focus
+{
+	outline: none;
+}

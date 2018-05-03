@@ -1,0 +1,134 @@
+.header 
+{
+	width: 100%;
+	height: 60px;
+	background-color: $blue;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-end;
+	list-style-type: none;
+	
+	a 
+	{
+		text-decoration: none;
+		color: $white;
+	}
+
+	li 
+	{
+		margin: 0px 10px;
+		color: $white;
+	}
+
+	li:hover a
+	{
+		color: $blue_hover;
+	}
+
+	.deconnexion 
+	{
+		display: flex;
+	}
+}
+
+.content-title
+{
+	display: flex;
+	flex-flow: column wrap;
+	flex-direction: center;
+	
+	.title-enter
+	{
+		display: flex;
+		justify-content: center;
+		color: $color;
+		font-size: 46px;
+	}
+
+}
+
+.content-product
+{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	cursor: pointer;	
+	.box-product
+	{	
+		position: relative;
+		width: 250px;
+		height: 250px;
+		border: 1px solid;
+		border-radius: 2px;
+		display: flex;
+		flex-flow: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 20px;
+		overflow: hidden;
+		.img-product
+		{
+			width: 250px;
+			height: 150px;
+		}	
+		.info-product 
+		{
+			text-align: center;
+			height: 100px;
+			display: flex;
+    		flex-direction: column;
+    		justify-content: space-around;
+			div 
+			{
+				font-size: 17px;
+			}
+		}	
+		.change_hover 
+		{	
+			position: absolute;
+			left: 0;
+			display: flex;
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			position: absolute;
+			bottom: 35px;
+		}
+
+		.show_hover {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			top: 0;
+    		left: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: $blue_hover;
+			color: $white;
+
+		}
+	}
+	
+	.box-product:hover
+	{		
+		.show_hover 
+		{
+			opacity: 0.8;
+			transition: 0.2s;
+			transition-timing-function: ease;
+			text-decoration: none;
+
+		}
+
+	}
+	
+}

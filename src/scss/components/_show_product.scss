@@ -1,0 +1,43 @@
+
+.content-title 
+{
+
+}
+
+.content-show 
+{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	
+	img {
+		width: 400px;
+		height: auto;
+	}
+
+	div {
+		margin-top: 8px;
+		display: flex;
+	}
+
+	.content_product
+	{
+		display: flex;
+    	flex-flow: column wrap;
+	}
+	
+	.notes 
+	{
+		width: 400px;
+	}
+
+	.connexion
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+	}
+}

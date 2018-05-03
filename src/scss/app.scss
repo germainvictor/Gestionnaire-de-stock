@@ -1,0 +1,18 @@
+
+// Settings
+@import 'settings/normalize';
+@import 'settings/reset';
+@import 'settings/colors';
+@import 'settings/fonts';
+@import 'settings/mediaqueries';
+@import 'settings/mixins';
+
+// Page
+@import 'page/layout';
+
+// Components
+@import 'components/index';
+@import 'components/inscription';
+@import 'components/home';
+@import 'components/add_product';
+@import 'components/show_product';
